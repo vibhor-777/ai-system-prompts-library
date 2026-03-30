@@ -1,0 +1,44 @@
+{
+  "name": "prompt-lib",
+  "version": "1.5.0",
+  "description": "CLI tool for exploring AI system prompt reconstructions from the AI System Prompts Library",
+  "main": "src/index.js",
+  "bin": {
+    "prompt-lib": "./src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test src/**/*.test.js",
+    "lint": "eslint src/"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.0.0",
+    "ora": "^8.0.1",
+    "cli-table3": "^0.6.4",
+    "marked": "^12.0.0",
+    "marked-terminal": "^7.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "ai",
+    "llm",
+    "system-prompt",
+    "prompt-engineering",
+    "cli",
+    "gpt",
+    "claude",
+    "gemini"
+  ],
+  "author": "AI System Prompts Library Contributors",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vibhor-777/ai-system-prompts-library.git"
+  }
+}

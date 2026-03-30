@@ -1,0 +1,48 @@
+{
+  "model": "Open-Source Community Models",
+  "version": "multiple",
+  "provider": "Community (based on Meta, Mistral, Falcon base models)",
+  "safety_level": "configurable",
+  "context_window": 128000,
+  "modalities": ["text", "code"],
+  "open_source": true,
+  "last_updated": "2024-06-01",
+  "tags": ["open-source", "community", "fine-tuning", "uncensored", "llama-based", "mistral-based", "local-deployment", "configurable-safety"],
+  "reconstruction_confidence": "high",
+  "reconstruction_confidence_reason": "Community models are fully open-weight with published system prompt templates. The Alpaca, ChatML, and model-specific templates are documented in model cards and fine-tuning repos.",
+  "sources": [
+    {
+      "type": "official-docs",
+      "title": "Dolphin Model Card — CognitiveComputations",
+      "url": "https://huggingface.co/cognitivecomputations/dolphin-2.9.1-llama-3-8b",
+      "date": "2024-05-01"
+    },
+    {
+      "type": "official-docs",
+      "title": "OpenHermes 2.5 Model Card",
+      "url": "https://huggingface.co/teknium/OpenHermes-2.5-Mistral-7B",
+      "date": "2023-11-01"
+    },
+    {
+      "type": "research-paper",
+      "title": "Fine-tuning Aligned Language Models Compromises Safety",
+      "url": "https://arxiv.org/abs/2310.03693",
+      "date": "2023-10-05"
+    },
+    {
+      "type": "official-docs",
+      "title": "Hugging Face Open LLM Leaderboard",
+      "url": "https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard",
+      "date": "2024-06-01"
+    }
+  ],
+  "known_versions_covered": [
+    "cognitivecomputations/dolphin-2.9.1-llama-3-8b",
+    "teknium/OpenHermes-2.5-Mistral-7B",
+    "NousResearch/Nous-Hermes-2-Yi-34B",
+    "WizardLMTeam/WizardLM-2-8x22B",
+    "allenai/tulu-3-8b"
+  ],
+  "alignment_method": "RLHF (varies by fine-tune; some use DPO or remove alignment entirely)",
+  "notes": "This entry covers the broader open-source community model ecosystem rather than a single model. The key insight is that open weights fundamentally change the safety paradigm: safety becomes the deployer's responsibility, not the model provider's. The spectrum from fully aligned (Tulu 3) to fully uncensored (Dolphin) represents the full range of what is technically possible with open-weight models."
+}

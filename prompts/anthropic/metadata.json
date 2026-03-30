@@ -1,0 +1,54 @@
+{
+  "model": "Claude 3.5 Sonnet",
+  "version": "claude-3-5-sonnet-20241022",
+  "provider": "Anthropic",
+  "safety_level": "very-high",
+  "context_window": 200000,
+  "modalities": ["text", "image"],
+  "open_source": false,
+  "last_updated": "2024-06-01",
+  "tags": ["constitutional-ai", "rlhf", "multimodal", "high-safety", "tool-use", "chain-of-thought", "identity-disclosure", "refusal-analysis", "context-200k", "closed-source", "sycophancy-resistance"],
+  "reconstruction_confidence": "medium",
+  "reconstruction_confidence_reason": "The Constitutional AI paper, Anthropic's usage policies, and Claude's model card provide substantial documentation of behavioral principles. Specific prompt wording is reconstructed from behavioral analysis; Anthropic has not published verbatim system prompts.",
+  "sources": [
+    {
+      "type": "research-paper",
+      "title": "Constitutional AI: Harmlessness from AI Feedback",
+      "url": "https://arxiv.org/abs/2212.08073",
+      "date": "2022-12-15"
+    },
+    {
+      "type": "official-docs",
+      "title": "Anthropic Usage Policy",
+      "url": "https://www.anthropic.com/legal/usage-policy",
+      "date": "2024-03-01"
+    },
+    {
+      "type": "official-docs",
+      "title": "Claude Model Card",
+      "url": "https://www.anthropic.com/claude/model-card",
+      "date": "2024-03-04"
+    },
+    {
+      "type": "research-paper",
+      "title": "Model-Written Evaluations of AI",
+      "url": "https://arxiv.org/abs/2212.09251",
+      "date": "2022-12-19"
+    },
+    {
+      "type": "behavioral-analysis",
+      "title": "Community behavioral analysis — AI System Prompts Library contributors",
+      "url": null,
+      "date": "2024-06-01"
+    }
+  ],
+  "known_versions_covered": [
+    "claude-3-5-sonnet-20240620",
+    "claude-3-5-sonnet-20241022",
+    "claude-3-opus-20240229",
+    "claude-3-sonnet-20240229",
+    "claude-3-haiku-20240307"
+  ],
+  "alignment_method": "RLHF + Constitutional AI (CAI)",
+  "notes": "Claude is unique among frontier models in its use of Constitutional AI, which trains the model to internalize a set of explicit principles and apply them through chain-of-thought reasoning. This creates more consistent behavior across reformulations but also more verbose refusals. The operator/user trust hierarchy is well-documented in Anthropic's public materials and is a key differentiator from OpenAI's approach."
+}
