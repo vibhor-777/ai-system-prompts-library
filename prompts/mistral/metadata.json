@@ -1,0 +1,47 @@
+{
+  "model": "Mistral Large 2",
+  "version": "mistral-large-2407",
+  "provider": "Mistral AI",
+  "safety_level": "configurable",
+  "context_window": 128000,
+  "modalities": ["text", "code"],
+  "open_source": false,
+  "last_updated": "2024-06-01",
+  "tags": ["dpo", "european-privacy", "tool-use", "configurable-safety", "multilingual", "context-128k", "instruction-following"],
+  "reconstruction_confidence": "medium",
+  "reconstruction_confidence_reason": "Mistral AI has published limited behavioral documentation. Reconstruction relies on API documentation, the company's blog posts, and behavioral analysis. The open-weight Mixtral models provide insight into training methodology.",
+  "sources": [
+    {
+      "type": "blog-post",
+      "title": "Mistral Large 2 — Frontier AI in Your Hands",
+      "url": "https://mistral.ai/news/mistral-large-2407/",
+      "date": "2024-07-24"
+    },
+    {
+      "type": "official-docs",
+      "title": "Mistral AI Documentation",
+      "url": "https://docs.mistral.ai/",
+      "date": "2024-06-01"
+    },
+    {
+      "type": "research-paper",
+      "title": "Mixtral of Experts",
+      "url": "https://arxiv.org/abs/2401.04088",
+      "date": "2024-01-08"
+    },
+    {
+      "type": "research-paper",
+      "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+      "url": "https://arxiv.org/abs/2305.18290",
+      "date": "2023-05-29"
+    }
+  ],
+  "known_versions_covered": [
+    "mistral-large-2402",
+    "mistral-large-2407",
+    "mistral-medium-2312",
+    "mixtral-8x22b-instruct-v0.1"
+  ],
+  "alignment_method": "DPO",
+  "notes": "Mistral Large 2 is notable for using Direct Preference Optimization (DPO) rather than RLHF, which produces measurably different behavioral patterns — particularly in instruction following precision and response consistency. Mistral AI's European base and GDPR orientation creates a distinct privacy-sensitive posture. Mistral Large itself is closed-source, though earlier Mistral and Mixtral models are open-weight."
+}

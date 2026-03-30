@@ -1,0 +1,52 @@
+{
+  "model": "GPT-4o",
+  "version": "gpt-4o-2024-08-06",
+  "provider": "OpenAI",
+  "safety_level": "high",
+  "context_window": 128000,
+  "modalities": ["text", "image", "audio"],
+  "open_source": false,
+  "last_updated": "2024-06-01",
+  "tags": ["rlhf", "multimodal", "tool-use", "high-safety", "identity-disclosure", "refusal-analysis", "context-128k", "closed-source"],
+  "reconstruction_confidence": "medium",
+  "reconstruction_confidence_reason": "Core identity, capability, and safety behaviors are well-corroborated by official documentation (Model Spec, System Card, Usage Policies). Specific formatting directives and nuanced priority ordering are inferred from behavioral analysis.",
+  "sources": [
+    {
+      "type": "official-docs",
+      "title": "OpenAI Model Spec",
+      "url": "https://model-spec.openai.com/",
+      "date": "2024-05-08"
+    },
+    {
+      "type": "official-docs",
+      "title": "GPT-4o System Card",
+      "url": "https://openai.com/index/gpt-4o-system-card/",
+      "date": "2024-05-13"
+    },
+    {
+      "type": "official-docs",
+      "title": "OpenAI Usage Policies",
+      "url": "https://openai.com/policies/usage-policies",
+      "date": "2024-01-10"
+    },
+    {
+      "type": "research-paper",
+      "title": "GPT-4 Technical Report",
+      "url": "https://arxiv.org/abs/2303.08774",
+      "date": "2023-03-15"
+    },
+    {
+      "type": "behavioral-analysis",
+      "title": "Community behavioral analysis — AI System Prompts Library contributors",
+      "url": null,
+      "date": "2024-06-01"
+    }
+  ],
+  "known_versions_covered": [
+    "gpt-4o-2024-05-13",
+    "gpt-4o-2024-08-06",
+    "gpt-4o-mini-2024-07-18"
+  ],
+  "alignment_method": "RLHF",
+  "notes": "GPT-4o behaves significantly differently between ChatGPT consumer context and raw API access without a system prompt. The consumer context includes additional branding and safety defaults not present in the bare API. The Model Spec published in May 2024 provides the most explicit public statement of OpenAI's intended behavioral priorities."
+}

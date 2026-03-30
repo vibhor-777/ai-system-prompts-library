@@ -1,0 +1,46 @@
+{
+  "model": "LLaMA 3.1",
+  "version": "Meta-Llama-3.1-70B-Instruct",
+  "provider": "Meta AI",
+  "safety_level": "configurable",
+  "context_window": 128000,
+  "modalities": ["text", "code"],
+  "open_source": true,
+  "last_updated": "2024-06-01",
+  "tags": ["rlhf", "open-source", "tool-use", "configurable-safety", "identity-disclosure", "refusal-analysis", "context-128k", "open-weight", "llama-guard"],
+  "reconstruction_confidence": "high",
+  "reconstruction_confidence_reason": "LLaMA 3.1 is open-weight. Meta publishes the official chat template and default system prompt in the model card and GitHub repository. This is the actual recommended template, not a reconstruction.",
+  "sources": [
+    {
+      "type": "official-docs",
+      "title": "LLaMA 3 Model Card (GitHub)",
+      "url": "https://github.com/meta-llama/llama3/blob/main/MODEL_CARD.md",
+      "date": "2024-07-23"
+    },
+    {
+      "type": "research-paper",
+      "title": "The Llama 3 Herd of Models",
+      "url": "https://ai.meta.com/research/publications/the-llama-3-herd-of-models/",
+      "date": "2024-07-31"
+    },
+    {
+      "type": "official-docs",
+      "title": "Meta Responsible Use Guide for LLaMA",
+      "url": "https://ai.meta.com/llama/responsible-use-guide/",
+      "date": "2024-07-23"
+    },
+    {
+      "type": "research-paper",
+      "title": "LLaMA Guard: LLM-based Input-Output Safeguard for Human-AI Conversations",
+      "url": "https://arxiv.org/abs/2312.06674",
+      "date": "2023-12-11"
+    }
+  ],
+  "known_versions_covered": [
+    "Meta-Llama-3.1-8B-Instruct",
+    "Meta-Llama-3.1-70B-Instruct",
+    "Meta-Llama-3.1-405B-Instruct"
+  ],
+  "alignment_method": "RLHF",
+  "notes": "LLaMA 3.1 is unique in this library as a fully open-weight model where the default system prompt is published by Meta directly. The open nature means safety behaviors are more configurable than any closed model, and community fine-tunes with altered safety profiles exist. Meta recommends using LLaMA Guard as an independent safety layer rather than relying exclusively on model-internal safety behaviors."
+}

@@ -1,0 +1,47 @@
+{
+  "model": "Grok-2",
+  "version": "grok-2-1212",
+  "provider": "xAI",
+  "safety_level": "medium",
+  "context_window": 131072,
+  "modalities": ["text", "image"],
+  "open_source": false,
+  "last_updated": "2024-06-01",
+  "tags": ["rlhf", "real-time-web", "multimodal", "humor", "anti-paternalism", "x-platform", "identity-disclosure", "direct-opinions", "context-128k", "closed-source"],
+  "reconstruction_confidence": "medium",
+  "reconstruction_confidence_reason": "xAI has published less documentation than OpenAI or Anthropic. Grok's persona and principles are partially described in xAI's blog posts and marketing materials. Behavioral analysis fills significant gaps.",
+  "sources": [
+    {
+      "type": "blog-post",
+      "title": "Announcing Grok",
+      "url": "https://x.ai/blog/grok",
+      "date": "2023-11-04"
+    },
+    {
+      "type": "blog-post",
+      "title": "Grok-2 Beta Release",
+      "url": "https://x.ai/blog/grok-2",
+      "date": "2024-08-13"
+    },
+    {
+      "type": "official-docs",
+      "title": "xAI Usage Policy",
+      "url": "https://x.ai/legal/usage-policy",
+      "date": "2024-01-01"
+    },
+    {
+      "type": "behavioral-analysis",
+      "title": "Community behavioral analysis — AI System Prompts Library contributors",
+      "url": null,
+      "date": "2024-06-01"
+    }
+  ],
+  "known_versions_covered": [
+    "grok-1",
+    "grok-1.5",
+    "grok-2-mini",
+    "grok-2-1212"
+  ],
+  "alignment_method": "RLHF",
+  "notes": "Grok is explicitly positioned as a less restricted alternative to GPT-4o and Claude, with a distinctive personality emphasizing wit, directness, and anti-paternalism. Its real-time integration with X (formerly Twitter) creates unique capabilities and risks around misinformation. The Fun Mode feature is a documented, user-accessible behavioral mode that increases edginess and explicit humor."
+}

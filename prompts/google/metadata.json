@@ -1,0 +1,47 @@
+{
+  "model": "Gemini 1.5 Pro",
+  "version": "gemini-1.5-pro-002",
+  "provider": "Google DeepMind",
+  "safety_level": "high",
+  "context_window": 2000000,
+  "modalities": ["text", "image", "video", "audio", "document"],
+  "open_source": false,
+  "last_updated": "2024-06-01",
+  "tags": ["rlhf", "multimodal", "tool-use", "high-safety", "context-1m", "closed-source", "long-context", "search-grounding", "chain-of-thought"],
+  "reconstruction_confidence": "low",
+  "reconstruction_confidence_reason": "Google has published less specific behavioral documentation than OpenAI or Anthropic. Reconstruction relies heavily on behavioral analysis and the Gemini technical reports, which describe capabilities but not specific prompt directives.",
+  "sources": [
+    {
+      "type": "research-paper",
+      "title": "Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context",
+      "url": "https://arxiv.org/abs/2403.05530",
+      "date": "2024-03-08"
+    },
+    {
+      "type": "official-docs",
+      "title": "Gemini API Documentation",
+      "url": "https://ai.google.dev/gemini-api/docs",
+      "date": "2024-05-01"
+    },
+    {
+      "type": "official-docs",
+      "title": "Google Responsible AI Practices",
+      "url": "https://ai.google/responsibility/responsible-ai-practices/",
+      "date": "2024-01-01"
+    },
+    {
+      "type": "behavioral-analysis",
+      "title": "Community behavioral analysis — AI System Prompts Library contributors",
+      "url": null,
+      "date": "2024-06-01"
+    }
+  ],
+  "known_versions_covered": [
+    "gemini-1.5-pro-001",
+    "gemini-1.5-pro-002",
+    "gemini-1.5-flash-001",
+    "gemini-1.5-flash-002"
+  ],
+  "alignment_method": "RLHF",
+  "notes": "Gemini 1.5 Pro's most distinctive feature is its 1–2 million token context window, which creates unique behavioral patterns around long-document processing. Google's published safety documentation is less detailed than OpenAI's Model Spec or Anthropic's Constitutional AI paper, resulting in lower reconstruction confidence. The Search grounding feature creates unique prompt injection considerations not present in other models."
+}
